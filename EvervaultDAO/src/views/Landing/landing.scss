@@ -1,0 +1,40 @@
+.landing {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100vh;
+    overflow-y: auto;
+    overflow-x: hidden;
+    background-color: #000000;
+    align-items: center;
+
+    &-hero {
+        min-height: calc(100vh - 180px);
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        background-image: url("../../assets/icons/homepage-bg.svg");
+        background-size: cover;
+        background-position: center center;
+        background-repeat: no-repeat;
+
+        @media screen and (max-width: 768px) {
+            min-height: calc(100vh);
+            background-position: -500px center;
+        }
+    }
+
+    // &::-webkit-scrollbar {
+    //     width: 12px; /* width of the entire scrollbar */
+    // }
+
+    // &::-webkit-scrollbar-track {
+    //     background: #000000; /* color of the tracking area */
+    // }
+
+    // &::-webkit-scrollbar-thumb {
+    //     background-color: #e1c170; /* color of the scroll thumb */
+    //     border-radius: 20px; /* roundness of the scroll thumb */
+    //     border: 3px solid #000000; /* creates padding around scroll thumb */
+    // }
+}

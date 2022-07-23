@@ -1,0 +1,224 @@
+@import "../../styles/variable.scss";
+
+.dashboard {
+  width: 100%;
+  height: 100%;
+  overflow-y: auto;
+
+  &-navbar {
+    align-items: center;
+    justify-content: space-between;
+    padding: 24px 32px 0;
+
+    @media (max-width: 768px) {
+      padding: 24px 12px 0;
+    }
+
+    &-logo {
+      align-items: center;
+
+      & > svg {
+        width: 64px;
+        height: auto;
+
+        @media (max-width: 768px) {
+          width: 48px;
+        }
+      }
+
+      & > span {
+        margin-left: 12px;
+        font-weight: 500;
+        text-transform: uppercase;
+
+        @media (max-width: 768px) {
+          font-size: 14px;
+        }
+      }
+    }
+
+    & > button {
+      width: 180px;
+      padding: 8px 0;
+      border: none;
+      border-radius: 8px;
+      background-image: url("../../resources/button-gold.svg");
+      background-repeat: no-repeat;
+      background-size: cover;
+      font-size: 14px;
+      font-weight: 500;
+      cursor: pointer;
+
+      @media (max-width: 768px) {
+        width: 160px;
+      }
+    }
+  }
+
+  &-main {
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    padding: 64px 0;
+
+    & > svg {
+    }
+
+    & > h1 {
+      font-weight: 500;
+      text-transform: uppercase;
+
+      @media (max-width: 768px) {
+        font-size: 24px;
+      }
+    }
+
+    & > p {
+      align-items: center;
+      text-transform: uppercase;
+
+      @media (max-width: 768px) {
+        font-size: 14px;
+      }
+
+      & > svg {
+        margin-right: 12px;
+      }
+    }
+
+    &-info {
+      width: 90%;
+      max-width: 560px;
+      margin-top: 24px;
+      grid-template: auto / 1fr 1fr 1fr;
+      grid-column-gap: 12px;
+
+      & > div {
+        align-items: center;
+        justify-content: center;
+        border: 2px solid $yellow;
+        border-radius: 12px;
+        background-color: rgba($color: $black, $alpha: 0.7);
+        padding: 24px 0;
+
+        & > span {
+          font-size: 12px;
+          font-weight: 400;
+          text-transform: uppercase;
+
+          @media (max-width: 768px) {
+            font-size: 10px;
+          }
+        }
+
+        & > p {
+          font-size: 16px;
+          font-weight: 500;
+          margin-bottom: 0;
+
+          @media (max-width: 768px) {
+            font-size: 14px;
+          }
+        }
+      }
+    }
+
+    &-sale {
+      width: 90%;
+      max-width: 560px;
+      margin-top: 12px;
+      border: 2px solid $yellow;
+      border-radius: 12px;
+      align-items: center;
+      justify-content: center;
+      background-color: rgba($color: $black, $alpha: 0.7);
+      padding: 24px 0;
+
+      & > h5 {
+        font-weight: 400;
+        text-transform: uppercase;
+        margin: 8px 0 16px;
+      }
+
+      & > svg {
+        width: 40px;
+        height: auto;
+      }
+
+      & > label {
+        width: 60%;
+        font-size: 12px;
+        margin-top: 16px;
+
+        @media (max-width: 768px) {
+          width: 80%;
+        }
+
+        & > span {
+          font-weight: 100;
+        }
+      }
+
+      & > div {
+        margin-top: 12px;
+        position: relative;
+        width: 60%;
+        align-items: center;
+
+        @media (max-width: 768px) {
+          width: 80%;
+        }
+
+        & > input {
+          width: 100%;
+          border: 1px solid $white;
+          border-radius: 32px;
+          background-color: transparent;
+          padding: 12px 64px 12px 24px;
+        }
+
+        &::after {
+          position: absolute;
+          content: "USDT";
+          font-size: 14px;
+          font-weight: 600;
+          right: 16px;
+        }
+      }
+
+      & > button {
+        width: 60%;
+        padding: 16px 0;
+        border: none;
+        margin-top: 24px;
+        border-radius: 12px;
+        background-image: url("../../resources/button-gold.svg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        text-transform: uppercase;
+        font-size: 16px;
+        font-weight: 500;
+        cursor: pointer;
+
+        @media (max-width: 768px) {
+          width: 80%;
+        }
+      }
+
+      & > p {
+        margin-top: 64px;
+        font-size: 14px;
+        font-weight: 500;
+        text-align: center;
+      }
+
+      & > a {
+        font-size: 12px;
+        text-decoration: none;
+        font-weight: 300;
+        text-align: center;
+      }
+    }
+  }
+}
